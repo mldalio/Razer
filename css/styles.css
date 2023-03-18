@@ -32,6 +32,43 @@ p {
   font-size: 1rem;
 }
 
+h2 {  
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  background-color: #45d52c;
+  border: none;
+  color: #1e1e1e;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;  
+  cursor: pointer;
+}
+
+.btn-outline-secondary {
+  background-color: #1e1e1e;
+  border: 1px solid #45d52c;
+  color: #45d52c;
+  padding: 10px 20px;
+  border-radius: 5px;    
+  cursor: pointer;
+  font-size: 1rem;
+}
+ 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #5c636a;
+}
+
 /*Logo */
 
 .logo {
@@ -46,6 +83,14 @@ p {
 
 /* Nav */
 
+.nav-link {
+  color: #fff;
+}
+
+.active {
+  color: #45d52c;
+}
+
 .navbar-toggler-icon {
   color:white;
 }
@@ -59,6 +104,7 @@ p {
 
 .iconosRedes {  
   margin-right: 10px;
+  color: #45d52c;
 }
  
 
@@ -134,26 +180,8 @@ body {
 
 /* Elementos Página Productos */
 
-.portadasProductos {
-  width: 100%;
-  border-bottom: 1px solid #45d52c;  
-}
-
-.portadasProductosFinal {
-  width: 100%;
-}
-
-.contenedorImagenes {
-  position:relative;
-  z-index: 0; 
-}
-
-.contenedorTexto {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  text-align: center;  ;
+.card {
+  background-color: #1e1e1e; 
 }
 
 .titulares {  
@@ -167,6 +195,38 @@ body {
   padding: 10px 0;
 }
 
+.banner {
+  background-color: #1e1e1e; 
+  padding: 30px;
+
+}
+
+/* Noticias */
+
+.linksNoticias {
+  color: #45d52c;
+}
+
+.banner2 {   
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/img/galeria_5.png);
+  background-size: cover;
+  background-repeat: no-repeat;  
+
+}
+  
+.banner3 {   
+  background: linear-gradient(rgba(0, 0, 0, 0.979), rgba(0,0,0,0.5)), url(../assets/img/razerblade.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;  
+
+}
+
+.banner4 {   
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/img/rapunzel_1.png);
+  background-size: cover;
+  background-repeat: no-repeat;  
+
+}
 
 /* Footer */
 
@@ -183,7 +243,7 @@ footer p {
   margin: 20px;
 }
 
-.contenedorFooter {
+.footer-container {
   border-bottom: #45d52c 1px solid;
   padding-bottom: 30px;
 

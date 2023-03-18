@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: 'Montserrat', sans-serif;
+ 
+}
+
+h2, h3, p {
+  color: #fff;
+}
+
+/*Header */
+
+header {
+  background-color: #1e1e1e;
+  padding: 10px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  border-bottom: 1px solid #45d52c;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/*Logo */
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo img {
+  width: 150px;
+  margin-left: 20px;
+}
+
+/* Nav */
+
+.navbar-toggler-icon {
+  color:white;
+}
+
+.containerIconosRedes{
+  display:flex;
+  align-items: center;  
+  margin-left: auto;
+  padding-right: 1rem;
+}
+
+.iconosRedes {  
+  margin-right: 10px;
+}
+ 
+
+
+/* Body */
+body {  
+  font-size: 1rem;
+  background-color: #161616;
+  line-height: 1.5;
+}
+
+
+/*Elementos Index */
+
+.contenedorIndex1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  padding: 30px;
+}
+
+.contenedorIndex1Texto {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);  
+  color: #fff;
+  padding: 30px;
+
+}
+
+.contenedorIndexPortada1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 40%;
+
+}
+
+.contenedorIndexPortada1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 30px;
+}
+
+.contenedorIndex3Texto {
+  width: 40%;
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  transform: translate(-50%, -50%);  
+  color: #fff;
+  padding: 30px;
+
+}
+
+.contenedorIndexPortada3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 60%;
+}
+
+.contenedorIndexPortada3 img { 
+  width: 85%; 
+  margin-left: 30px;
+}
+
+/* Elementos Página Productos */
+
+.portadasProductos {
+  width: 100%;
+  border-bottom: 1px solid #45d52c;  
+}
+
+.portadasProductosFinal {
+  width: 100%;
+}
+
+.contenedorImagenes {
+  position:relative;
+  z-index: 0; 
+}
+
+.contenedorTexto {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;  ;
+}
+
+.titulares {  
+  color: #45d52c;
+  padding: 10px 0;
+  font-size: 2rem;
+}
+
+.parrafos {
+  color: #fff;   
+  padding: 10px 0;
+}
+
+
+/* Footer */
+
+footer {
+  background-color: #1e1e1e;
+  padding: 45px;   
+  width: 100%;  
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 20px;
+}
+
+.contenedorFooter {
+  border-bottom: #45d52c 1px solid;
+  padding-bottom: 30px;
+
+}
+

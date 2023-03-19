@@ -1,40 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Razer - Productos</title>
-  <!-- CSS -->
-  <link rel="stylesheet" href="../css/styles.css" />
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Razer</title>
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
+        integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Boostrap-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
-  <header>
-    <!-- Logo -->
-    <div class="logo">
-      <img class="logo" src="../assets/img/logo.png" alt="Razer logo" />
-    </div>
-    <nav>
-      <!--Navegación-->
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./productos.html">Productos</a></li>
-        <li><a href="./tienda.html">Tienda</a></li>
-        <li><a href="./tostadora.html">Tostadora</a></li>
-        <li><a href="./nosotros.html">Nosotros</a></li>
-        <li><a class="activo" href="#">Contacto</a></li>
-        <!--Redes sociales-->
-        <li><a href="http://www.instagram.com" target="_blank">Instagram</a></li>
-        <li><a href="http://www.facebook.com" target="_blank">Facebook</a></li>
-        <li><a href="http://www.twitter.com" target="_blank">Twitter</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+              <a class="navbar-brand logo" href="#">
+                  <img src="../assets/img/logo.png" alt="Razer logo" />
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSuportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center w-100">
+                      <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="./tienda.html" id="navbarDropdown" role="button"
+                              data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Rapunzel Chroma</a></li>
+                              <li><a class="dropdown-item" href="#">Tostadora</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./tostadora.html">Noticias</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" href="#">Contacto</a>
+                      </li>
+                  </ul>
+                  <div class="containerIconosRedes">
+                    <a href="http://www.instagram.com/Razer" target="_blank" class="iconosRedes"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://www.facebook.com/Razer" target="_blank" class="iconosRedes"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="http://www.twitter.com/Razer" target="
+                    " class="iconosRedes"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+              </div>
+          </div>
+      </nav>
+    </header>
+
   <!--Contenido principal-->
+
   <main>
     <section>
       <div class="contenedorImagenes">
@@ -77,32 +118,34 @@
     </section>
   </main>
   <!--Footer-->
-  <footer>
-    <div class="contenedorFooter">
-    <div class="logo">      
-    <img class="logo" src="../assets/img/logo.png" alt="Razer logo" />
-    </div>
-    <!--Navegación-->
-    <nav class="navFooter">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./productos.html">Productos</a></li>
-        <li><a href="./tienda.html">Tienda</a></li>
-        <li><a href="./tostadora.html">Tostadora</a></li>
-        <li><a href="./nosotros.html">Nosotros</a></li>
-        <li><a href="#">Contacto</a></li>
-        <!--Redes sociales-->
-        <li><a href="http://www.instagram.com" target="_blank">Instagram</a></li>
-        <li><a href="http://www.facebook.com" target="_blank">Facebook</a></li>
-        <li><a href="http://www.twitter.com" target="_blank">Twitter</a></li>
-    </ul>
-  </nav>
-</div>
-    <p>Diseño hecho por <span style="color: #45d52c;"> María Laura Dalio. <br> </span>
-    Copyright© 2023 Todos los derechos reservados.
-  </p>
- 
-  </footer>
-</body>
 
-</html>
+  <footer>
+    <div class="footer-container">
+        <div class="container-fluid">        
+            <!--Navegación-->
+            <nav class="navbar justify-content-center">
+                <div class="logo">
+                    <img class="logo" src="../assets/img/logo.png" alt="Razer logo" />
+                </div>            
+                <!--Redes sociales-->
+                <div class="containerIconosRedes">
+                  <a href="http://www.instagram.com/Razer" target="_blank" class="iconosRedes"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="http://www.facebook.com/Razer" target="_blank" class="iconosRedes"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="http://www.twitter.com/Razer" target="
+                  " class="iconosRedes"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+            </nav>
+        </div>
+       
+    </div>  
+    <div>
+        <p>Diseño hecho por <span style="color: #45d52c;"> María Laura Dalio. <br> </span>
+            Copyright© 2023 Todos los derechos reservados.
+        </p>
+    </div>         
+   
+  </footer>
+  <!--Js-->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>

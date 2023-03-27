@@ -120,10 +120,6 @@ body {
   line-height: 1.5;
 }
 
-
-/*Elementos Index */
-
-
 /* Elementos Página Productos */
 
 .card {
@@ -143,8 +139,9 @@ body {
 
 .banner {
   background-color: #1e1e1e; 
-  padding: 30px;
-
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px; 
 }
 
 /* Noticias */
@@ -245,6 +242,14 @@ footer p {
   .hero-content {
     padding-top: 7.5vh;
     padding-bottom: 7.5vh;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .btn {
+    display:block;
+    width: 100%;
   }
 }
 

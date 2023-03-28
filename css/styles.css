@@ -26,8 +26,6 @@ header {
     left: 0;
     width: 100%;
     z-index: 999;
-    
-  
  
 }
 
@@ -210,9 +208,7 @@ footer p {
 /* Página Tienda-Rapunzel*/
 .hero {  
   min-height: 100vh;
-  background-size: cover;
-  background-position: center;  
-}
+} 
 
 .hero-overlay {  
   position: absolute;
@@ -231,11 +227,13 @@ footer p {
 #portadaRapunzel {
   background: url(../assets/img/rapunzel_1.png);
   background-size: cover;
+  background-position: center center;
 }
 
 #cierreRapunzel {
   background: url(../assets/img/rapunzel_2.png);
   background-size: cover;
+  background-position: center center;
 }
 
 .containerVideo {
@@ -258,17 +256,20 @@ footer p {
 #portadaLanzamientos {
   background: url(../assets/img/productos_1.png);
   background-size: cover;
+  background-position: center center;
 }
 
 
 #portadaPerifericos {
   background: url(../assets/img/productos_2.jpg);
   background-size: cover;
+  background-position: center center;
 }
 
 #portadaFinal {
   background: url(../assets/img/productos_3.png);
   background-size: cover;
+  background-position: center center;
 }
 
 
@@ -277,6 +278,77 @@ footer p {
 #portadaTostadora {
   background: url(../assets/img/portada_tostadora.png);
   background-size: cover;
+  background-position: center center;
+}
+
+/*Página Nosotros */
+#portadaNosotros {
+  background: url(../assets/img/portada_nosotros.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+#portadaInfo {
+  background: url(../assets/img/nosotros_1.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+#portadaFaker {
+  background: url(../assets/img/nosotros_2.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+#portadaContacto {
+  background: url(../assets/img/portada_contacto.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+/*Página Contacto */
+
+.container-formulario {
+  background-image: url('../assets/img/productos_3.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  height: 100vh;
+}
+
+form {
+  background-color: #212529;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;  
+}
+
+input [type="text"], input [type="email"], input [type="tel"], input [type="date"], input [type="number"], input [type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+input [type="submit"] {
+  background-color: #45d52c;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input [type="submit"]:hover {
+  background-color: #45d52c;
+  color: #fff;
 }
 
 /* Media Queries */

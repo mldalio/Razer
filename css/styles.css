@@ -14,14 +14,23 @@ h2, h3, p {
 
 /*Header */
 
+
+
 header {
-  background-color: #1e1e1e;
-  padding: 10px;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
+  background-color: #212529;
+  padding: 10px;    
   border-bottom: 1px solid #45d52c;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    
+  
+ 
 }
+
 
 h1 {
   font-weight: 700; 
@@ -55,7 +64,7 @@ h1, h2, h3 {
 }
 
 .btn-outline-secondary {
-  background-color: #1e1e1e;
+  background-color: #212529;
   border: 1px solid #45d52c;
   color: #45d52c;
   padding: 10px 20px;
@@ -87,16 +96,17 @@ a:hover {
 
 /* Nav */
 
+
+.navbar_toggler_icon {
+    color: #45d52c;    
+  }
+
 .nav-link {
   color: #fff;
 }
 
-.active {
+.activo {
   color: #45d52c;
-}
-
-.navbar-toggler-icon {
-  color:white;
 }
 
 .containerIconosRedes{
@@ -123,32 +133,36 @@ body {
 /* Elementos Página Productos */
 
 .card {
-  background-color: #1e1e1e; 
+  background-color: #212529; 
 }
 
-.titulares {  
-  color: #45d52c;
+.titulares {    
   padding: 10px 0;
   font-size: 2rem;
+  font-weight: 700;
 }
 
-.parrafos {
-  color: #fff;   
+.parrafos { 
   padding: 10px 0;
 }
 
 .banner {
-  background-color: #1e1e1e; 
-  padding-left: 30px;
-  padding-right: 30px;
+  background-color: #212529;   
   border-radius: 20px; 
+  padding: 20px;
 }
 
 /* Noticias */
 
 .linksNoticias {
   color: #45d52c;
+  text-decoration: underline;
 }
+
+.linksNoticias:hover {
+  color: #5c636a;
+}
+  
 
 .banner2 {   
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/img/galeria_5.png);
@@ -174,7 +188,7 @@ body {
 /* Footer */
 
 footer {
-  background-color: #1e1e1e;
+  background-color: #212529;
   padding: 45px;   
   width: 100%;  
 }
@@ -224,6 +238,48 @@ footer p {
   background-size: cover;
 }
 
+.containerVideo {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;    
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*Página Productos */
+
+#portadaLanzamientos {
+  background: url(../assets/img/productos_1.png);
+  background-size: cover;
+}
+
+
+#portadaPerifericos {
+  background: url(../assets/img/productos_2.jpg);
+  background-size: cover;
+}
+
+#portadaFinal {
+  background: url(../assets/img/productos_3.png);
+  background-size: cover;
+}
+
+
+/*Página Tostadora */
+
+#portadaTostadora {
+  background: url(../assets/img/portada_tostadora.png);
+  background-size: cover;
+}
+
+/* Media Queries */
 
 @media (max-width: 992px) {
   .hero-content {
@@ -253,9 +309,6 @@ footer p {
   }
 }
 
-.embed-responsive {
-  width: 100%; 
-}
 
 #caracteristicasRapunzel {  
   padding: 30px;

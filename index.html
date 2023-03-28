@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Razer</title>
   <!--FontAwesome-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <script src="https://kit.fontawesome.com/a54d711a2d.js" crossorigin="anonymous"></script>
   <!--Boostrap-->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
   <!-- CSS -->
   <link rel="stylesheet" href="./css/styles.css" />
   <!-- Favicon -->
@@ -20,7 +20,7 @@
 <body>
   <header>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand logo" href="#">
           <img src="./assets/img/logo.png" alt="Razer logo" />
@@ -32,22 +32,21 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center w-100">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link activo" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="./pages/tienda.html" id="navbarDropdown" role="button"
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Rapunzel Chroma</a></li>
-                <li><a class="dropdown-item" href="#">Tostadora</a></li>
+                <li>
+                  <a class="dropdown-item" href="./pages/rapunzel.html">Rapunzel Chroma</a>
+                </li>
+                <li><a class="dropdown-item" href="./pages/tostadora.html">Tostadora</a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./pages/productos.html">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/tostadora.html">Noticias</a>
-            </li>
+            </li>           
             <li class="nav-item">
               <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
             </li>
@@ -57,10 +56,11 @@
           </ul>
           <div class="containerIconosRedes">
             <a href="http://www.instagram.com/Razer" target="_blank" class="iconosRedes"><i
-                class="fa fa-instagram" aria-hidden="true"></i></a>
+                class="fa-brands fa-instagram"></i></a>
             <a href="http://www.facebook.com/Razer" target="_blank" class="iconosRedes"><i
-                class="fa fa-facebook-square" aria-hidden="true"></i></a>
-            <a href="http://www.twitter.com/Razer" target="_blank" class="iconosRedes"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                class="fa-brands fa-facebook"></i></a>
+            <a href="http://www.twitter.com/Razer" target="_blank" class="iconosRedes"><i
+                class="fa-brands fa-twitter"></i></a>
           </div>
         </div>
       </div>
@@ -73,17 +73,24 @@
       <div class="container col-xxl-8 px-4 py-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5">
           <div class="col-10 col-sm-8 col-lg-6">
-            <img src="./assets/img/index_portada1.png" class="d-block mx-lg-auto img-fluid" alt="Auriculares">
+            <img src="./assets/img/index_portada1.png" class="d-block mx-lg-auto img-fluid" alt="Auriculares" />
           </div>
           <div class="col-lg-6">
             <p class="lead">RAZEN KRAKEN V3 HYPERSENSE</p>
-            <h1 class="display-5 lh-1 mb-3 titulares">Inmersión desde todos los ángulos</h1>
-            <p class="parrafos">El equilibrio perfecto entre comodidad, aislamiento de sonido y
-              transferencia híptica</p>
+            <h1 class="display-5 lh-1 mb-3 titulares">
+              Inmersión desde todos los ángulos
+            </h1>
+            <p class="parrafos">
+              El equilibrio perfecto entre comodidad, aislamiento de sonido y
+              transferencia híptica
+            </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Comprar</button>
-              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Más
-                información</button>
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+                Comprar
+              </button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+                Más información
+              </button>
             </div>
           </div>
         </div>
@@ -95,13 +102,15 @@
       <div class="container col-xxl-8 px-4 py-4 py-5">
         <div class="row flex-lg-row align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
-            <img src="./assets/img/index_portada3.png" class="d-block mx-lg-auto img-fluid" alt="Computadora">
+            <img src="./assets/img/index_portada3.png" class="d-block mx-lg-auto img-fluid" alt="Computadora" />
           </div>
           <div class="col-lg-6">
             <h2 class="titulares">For Gamers. By Gamers</h2>
-            <p class="parrafos">Descubrí lo que significa contar con la ventaja injusta a medida que
-              experimentas niveles de precisión, control e inmersión líderes en la industria.</p>
-
+            <p class="parrafos">
+              Descubrí lo que significa contar con la ventaja injusta a medida
+              que experimentas niveles de precisión, control e inmersión
+              líderes en la industria.
+            </p>
           </div>
         </div>
       </div>
@@ -110,18 +119,22 @@
     <!--Sección banner-->
 
     <section>
-      <div class="container col-xxl-8 px-4 py-4 py-5">
+      <div class="container col-xxl-8 px-4 py-4 py-5 mt-4 mb-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5 rounded-2 shadow-sm banner">
           <div class="col-10 col-sm-8 col-lg-6 mt-0">
-            <img src="./assets/img/index_portada2.png" class="d-block mx-lg-auto img-fluid" alt="Auriculares">
+            <img src="./assets/img/index_portada2.png" class="d-block mx-lg-auto img-fluid" alt="Auriculares" />
           </div>
           <div class="col-lg-6 mt-0">
             <p>Novedad</p>
             <h1 class="display-5 lh-1 mb-3 titulares">RazerBlade 16</h1>
-            <p class="parrafos">El equilibrio perfecto entre comodidad, aislamiento de sonido y
-              transferencia híptica</p>
+            <p class="parrafos">
+              El equilibrio perfecto entre comodidad, aislamiento de sonido y
+              transferencia híptica
+            </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Ver más información</button>
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+                Ver más información
+              </button>
             </div>
           </div>
         </div>
@@ -134,8 +147,8 @@
         <div class="col-lg-6 mb-4 mb-lg-0 text-start">
           <h2>Descubrí todos nuestros productos</h2>
         </div>
-        <div class="col-lg-6 text-end">          
-          <a href="./pages/productos.html" class="btn btn-outline-secondary">Ver todos los productos</a>          
+        <div class="col-lg-6 text-end">
+          <a href="./pages/productos.html" class="btn btn-primary">Ver todos los productos</a>
         </div>
       </div>
     </section>
@@ -143,19 +156,22 @@
     <div class="album py-5">
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
           <!--Cards-->
 
           <div class="col">
             <div class="card shadow-sm">
-              <img src="./assets/img/index_menu1.png">
+              <img src="./assets/img/index_menu1.png" />
               <div class="card-body">
                 <h3>Mouses</h3>
-                <p class="card-text">Precisión a nivel de píxel para todo tipo de tamaños de mano y estilos de agarre
+                <p class="card-text">
+                  Precisión a nivel de píxel para todo tipo de tamaños de mano
+                  y estilos de agarre
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      Ver más
+                    </button>
                   </div>
                 </div>
               </div>
@@ -164,13 +180,17 @@
 
           <div class="col">
             <div class="card shadow-sm">
-              <img src="./assets/img/index_menu2.png">
+              <img src="./assets/img/index_menu2.png" />
               <div class="card-body">
                 <h3>Teclados</h3>
-                <p class="card-text">Ópticos, mecánicos y todos los estilos intermedios</p>
+                <p class="card-text">
+                  Ópticos, mecánicos y todos los estilos intermedios
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      Ver más
+                    </button>
                   </div>
                 </div>
               </div>
@@ -179,13 +199,17 @@
 
           <div class="col">
             <div class="card shadow-sm">
-              <img src="./assets/img/index_menu3.png">
+              <img src="./assets/img/index_menu3.png" />
               <div class="card-body">
                 <h3>Mousepads</h3>
-                <p class="card-text">Diseños suave, duro e híbrido para mejorar tu control</p>
+                <p class="card-text">
+                  Diseños suave, duro e híbrido para mejorar tu control
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      Ver más
+                    </button>
                   </div>
                 </div>
               </div>
@@ -194,13 +218,18 @@
 
           <div class="col">
             <div class="card shadow-sm">
-              <img src="./assets/img/index_menu4.png">
+              <img src="./assets/img/index_menu4.png" />
               <div class="card-body">
                 <h3>Auriculares</h3>
-                <p class="card-text">Excelentes para jugar, para el día a día o para una combinación de ambos</p>
+                <p class="card-text">
+                  Excelentes para jugar, para el día a día o para una
+                  combinación de ambos
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      Ver más
+                    </button>
                   </div>
                 </div>
               </div>
@@ -209,13 +238,18 @@
 
           <div class="col">
             <div class="card shadow-sm">
-              <img src="./assets/img/index_menu5.png">
+              <img src="./assets/img/index_menu5.png" />
               <div class="card-body">
                 <h3>Webcams</h3>
-                <p class="card-text">Sorprendente fidelidad visual para transmisiones y productividad</p>
+                <p class="card-text">
+                  Sorprendente fidelidad visual para transmisiones y
+                  productividad
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      Ver más
+                    </button>
                   </div>
                 </div>
               </div>
@@ -224,13 +258,17 @@
 
           <div class="col">
             <div class="card shadow-sm">
-              <img src="./assets/img/index_menu6.png">
+              <img src="./assets/img/index_menu6.png" />
               <div class="card-body">
                 <h3>Micrófonos</h3>
-                <p class="card-text">Diseñados para una captación de voz nítida</p>
+                <p class="card-text">
+                  Diseñados para una captación de voz nítida
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      Ver más
+                    </button>
                   </div>
                 </div>
               </div>
@@ -244,33 +282,41 @@
 
     <section class="py-5">
       <div class="container">
-        <div class="row py-lg-5">
-          <div class="col-lg-6 col-md-8 mx-auto">
-            <h2>Últimas novedades</h2>
+        <div class="row py-5 justify-content-between align-items-start">
+          <div class="col-lg-6 mb-4 mb-lg-0 text-start">
+            <h2>Últimas noticias</h2>
           </div>
-          <div class="col-lg-6 col-md-8 mx-auto">
-            <a class="linksNoticias">Ver todas las noticias</a>
-          </div>
-        </div>
-        <div class="p-4 p-md-5 mb-4 text-white rounded banner2">
-          <div class="col-md-6 px-0">
-            <h2 class="titulares">Bread to win</h2>
-            <div class="mb-1 text-muted">Nov 12</div>
-            <p class="parrafos">Ya está disponible para su compra el primer electrodoméstico dedicado a proporcionar el
-              combustible #1 para gamers.</p>
-            <p class="lead mb-0"><a class="linksNoticias" href="#" class="text-white">Leer artículo</a></p>
+          <div class="col-lg-6 text-end">
+            <a href="#" class="btn btn-primary">Ver todas las noticias</a>
           </div>
         </div>
 
+        <!--Noticia1 -->
+
+        <div class="p-4 mb-4 text-white rounded banner2">
+          <div class="col-md-6 px-0">
+            <h2 class="titulares">Bread to win</h2>
+            <p class="parrafos">
+              Ya está disponible para su compra el primer electrodoméstico
+              dedicado a proporcionar el combustible #1 para gamers.
+            </p>
+            <p class="lead mb-0">
+              <a class="linksNoticias" href="#">Leer artículo</a>
+            </p>
+          </div>
+        </div>
+
+        <!--Noticia2 y 3-->
+
         <div class="row mb-2">
           <div class="col-md-6">
-            <div
-              class="row g-0 banner2 alert-heading overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative banner3">
+            <div class="row g-0 banner2 alert-heading overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative banner3">
               <div class="col p-4 d-flex flex-column position-static">
-                <h3 class="mb-0">Razer Blade 15</h3>
-                <div class="mb-1 text-muted">Nov 12</div>
-                <p class="mb-auto">El portátil más potente de Razer, con un diseño ultradelgado y una pantalla de 15,6
-                  pulgadas.</p>
+                <h3 class="mb-0 titulares">Razer Blade 15</h3>
+                <p class="mb-auto parrafos">
+                  El portátil más potente de Razer, con un diseño ultradelgado
+                  y una pantalla de 15,6 pulgadas.
+                </p>
                 <a href="#" class="linksNoticias">Seguir leyendo</a>
               </div>
             </div>
@@ -279,10 +325,10 @@
             <div
               class="row g-0 banner2 alert-heading overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative banner4">
               <div class="col p-4 d-flex flex-column position-static">
-                <h3 class="mb-0">Razer Rapunzel Chroma</h3>
-                <div class="mb-1 text-muted">Nov 11</div>
-                <p class="mb-auto">¿Quién dice que tu juego debe ser lo único que mata? Personaliza hoy mismo tu
-                  cabello.
+                <h3 class="mb-0 titulares">Razer Rapunzel Chroma</h3>
+                <p class="mb-auto parrafos">
+                  ¿Quién dice que tu juego debe ser lo único que mata?
+                  Personaliza hoy mismo tu cabello.
                 </p>
                 <a href="#" class="linksNoticias">Seguir leyendo</a>
               </div>
@@ -314,14 +360,17 @@
         </div>
       </div>
       <div>
-        <p>Diseño hecho por <span style="color: #45d52c;"> María Laura Dalio. <br> </span>
+        <p>
+          Diseño hecho por
+          <span style="color: #45d52c"> María Laura Dalio. <br /> </span>
           Copyright© 2023 Todos los derechos reservados.
         </p>
       </div>
     </footer>
     <!--Js-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"></script>
+  </main>
 </body>
 </html>
